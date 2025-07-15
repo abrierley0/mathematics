@@ -23,7 +23,7 @@ plt.grid(True)
 # Subplot #2
 plt.subplot(1,2,2)
 plt.plot(x,y1,'-kx', label='y = 3**x')
-plt.plot(x,y1d,'-rx', label='y1d = 1.099*(3**x)')
+plt.plot(x,y1d,'-rx', label='dy/dx')
 plt.grid(True)
 #plt.title('y = 3**x')
 plt.legend()

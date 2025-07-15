@@ -14,7 +14,7 @@ y4 = 1**x
 plt.plot(x,y1,'-bx', label='y = 1.5**x')
 plt.plot(x,y2,'-ko', label='y = 2**x')
 plt.plot(x,y3,'-c*', label='y = 3**x')
-plt.plot(x,y4,'-mx', label='y = 1**x')
+plt.plot(x,y4,':m', label='y = 1**x')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.axis([-5.,5., 0.,80.])

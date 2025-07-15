@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
+# Enable LaTeX rendering
+# plt.rcParams['text.usetex'] = True
+
 #x = np.linspace(-4,4)
 x = np.arange(-5.,5.,0.25)
 
@@ -11,10 +14,10 @@ y2 = 2**x
 y3 = 3**x
 y4 = 1**x
 
-plt.plot(x,y1,'-bx', label='y = 1.5**x')
-plt.plot(x,y2,'-ko', label='y = 2**x')
-plt.plot(x,y3,'-c*', label='y = 3**x')
-plt.plot(x,y4,':m', label='y = 1**x')
+plt.plot(x,y1,'-bx', label='$y = 1.5^x$')
+plt.plot(x,y2,'-ko', label='$y = 2^x$')
+plt.plot(x,y3,'-c*', label='$y = 3^x$')
+plt.plot(x,y4,':m', label='$y = 1^x$')  # if you need to use backslash, include r before ''
 plt.xlabel('x')
 plt.ylabel('y')
 plt.axis([-5.,5., 0.,80.])
